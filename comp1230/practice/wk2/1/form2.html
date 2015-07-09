@@ -1,0 +1,70 @@
+<?php
+$color_id=$_GET['color_id'];
+$bgcolor='';
+// blue, green, brown, orange, red
+switch($color_id)
+{
+case 1:
+{
+  $bgcolor='blue';
+  break;
+}
+case 2:
+{
+  $bgcolor='green';
+  break;
+}
+case 3:
+{
+  $bgcolor='brown';
+  break;
+}
+case 4:
+{
+  $bgcolor='orange';
+  break;
+}
+case 5:
+{
+  $bgcolor='red';
+}
+}
+?>
+ <html>
+
+ <head>
+  <title>Drop on</title>
+</head>
+<body>
+ <form method='get'>
+  <table>
+    <tr>
+       <td>
+	     <input type='checkbox' name='blue' value='$color_id' />
+	   </td>
+	   <td>
+	     <input type='checkbox' name='green' value='color_id' />
+	   </td>
+	   <td>
+	     <input type='checkbox' name='brown' value='color_id' />
+	   </td>
+	   <td>
+	     <input type='checkbox' name='orange' value='color_id' /> 
+	   </td>
+	   <td>
+	     <input type='checkbox' name='red' value='color_id' /> 
+	   </td>
+	</tr>
+		<tr>
+	   <td colspan='5'>
+	     <input type='submit' name='submit' value='click here' size='10' maxlength='10' /> 
+	   </td>
+	</tr>
+ </table>
+
+ </form>  
+
+</body>
+
+
+</html>

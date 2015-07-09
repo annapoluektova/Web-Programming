@@ -1,0 +1,12 @@
+
+---------REPORT---(2013-02-22)---------
+Values 
+Total Lines in Textarea = 5
+Total of All Numbers = 0
+Total of odd numbers = 0
+Total of even numbers = 0
+---------INVALID NUMBERS-------
+ 
+               dddd
+ dddd
+ ggg

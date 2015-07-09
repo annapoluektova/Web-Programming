@@ -1,0 +1,36 @@
+#iframe_gl
+                    {
+	       background-color: #BBBBBB;
+		   height: 3000px;
+		   width: 900px;
+		   border-width: 0;
+		   padding: 10px 10px 10px 10px;
+		   font-weight: normal;
+		  }
+#iframe_gl.p 
+                       {
+             text-indent: 25px;
+             font-weight: normal;
+             text-align: justify;
+             font-family: "Lucida Console", Monaco, monospace;
+             font-size: 16px;
+             font-style: normal;
+             margin: 0.3cm 0.3cm 0.3cm 0.3cm;
+             width: auto;
+             height: auto;
+             padding: 3px 2px 3px 2px;
+            }
+
+p
+          {
+      font-weight: normal;
+      text-align: justify;
+      font-family: "Lucida Console", Monaco, monospace;
+      font-size: 16px;
+	  margin: 15px 10px 10px 10px;
+      width: auto;
+      height: auto;
+      padding: 2px 5px 5px 5px;
+	  line-height: 15px;
+	  word-spacing: 4px;
+     }

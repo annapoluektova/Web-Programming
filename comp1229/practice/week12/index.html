@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Week 12</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script language='javascript' type='text/javascript'>
+
+var numbers = [1,3,5,6,7,8,9,10,12,15];
+
+
+function print_array()
+{
+  document.getElementById('demo').innerHTML = numbers;
+}
+
+function print_reverse()
+{
+	var j=0;
+	var tmp_numbers=new Array();
+	for (i=numbers.length-1; i>=0;i--)
+	{
+		tmp_numbers[j]=numbers[i];
+		j++;
+	}
+
+	  document.getElementById('demo').innerHTML = tmp_numbers;
+
+}
+
+function print_sum()
+{
+var sum=0;
+
+  for (i=0; i<numbers.length;i++)
+{
+    sum+=parseInt(numbers[i]);
+}
+
+document.getElementById('demo').innerHTML = sum; 
+}
+
+
+
+function print_even()
+{
+var sum=0;
+
+ for (i=0; i<numbers.length;i++)
+{
+  if (numbers == 0 || !(numbers[i]%2))
+  {
+  sum+=parseInt(numbers[i]);
+  }
+  document.getElementById('demo').innerHTML = sum;
+
+}
+}
+
+function add_to_end(value,ar_numbers)
+{
+	value=document.getElementById('add_end').value;
+	
+	if (Number(value))
+	{
+		numbers[numbers.length]=Number(value);
+		document.getElementById('demo').innerHTML = numbers;
+	}
+	else
+		alert("'"+value+"' is NOT a Number");
+		
+	
+	
+}
+
+function add_to_begin()
+{
+    var tempArray=new Array();
+	var j=0;
+	
+    value=document.getElementById('add_begin').value;
+
+	
+	if (Number(value))
+	{
+		tempArray[j]=Number(value);
+		j=1;
+		for(i=0; i<numbers.length;i++)
+		{
+			tempArray[j]=numbers[i];
+			j++;
+		}
+	
+		numbers=tempArray;
+		document.getElementById('demo').innerHTML = tempArray;
+	}
+	else
+		alert("'"+value+"' is NOT a Number");
+}
+
+
+function reverse_array()
+{
+	var tempArray=new Array();
+	var j=0;
+	
+	for (i=numbers.length-1; i>=0;i--)
+	{
+		tempArray[j]=numbers[i]; 
+		j++;
+	}
+	document.getElementById('demo').innerHTML = tempArray;
+}
+
+</script>
+
+<div id='demo'>
+<br />
+
+</div>
+
+<br />
+<button onclick='print_array()'>elements</button><br /><br />
+<button onclick='print_reverse()'>print array reverse</button><br /><br />
+<button onclick='print_sum()'>sum array elements</button><br /><br />
+<button onclick='print_even()'>sum even values</button><br /><br />
+<input type='text' id='add_end' /><button onclick='add_to_end()'>add new element to the end</button><br /><br />
+<input type='text' id='add_begin' /><button onclick='add_to_begin()'>add new element to the begining</button><br /><br />
+<button onclick='reverse_array()'>reverse array values</button><br /><br />
+
+<br />
+<br />
+
+
+<script type='text/javascript'> //<![CDATA[
+document.write ("<a href='http://validator.w3.org/check?uri=" +
+location.href+ "\;ss=1;verbose=1' target='display'>" +
+"<img src='http://gblearn.com/images/valid-xhtml10.png' " +
+"width='60' height='21' border='0' " +
+"alt='Valid XHTML 1.0 Transitional.' " +
+"title='Valid XHTML 1.0 Transitional.' /></a>")
+dt=new Date(document.lastModified);
+document.write("<small> This page was last modified on " +
+dt.toLocaleString() + "</small>")
+//]]></script>
+</body>
+
+
+</html>

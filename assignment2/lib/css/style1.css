@@ -1,0 +1,23 @@
+iframe
+                      {
+					   
+			background-image: url("http://s2786356.gblearn.com/comp1229/assignments/assignment2/images/22.jpg") ;
+	
+		   }
+		   
+
+* { 
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+ .right_frame {
+	min-height: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	height: 250%;
+	z-index: 1;
+}
+

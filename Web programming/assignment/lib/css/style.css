@@ -1,0 +1,297 @@
+body
+        {
+     background-color: #777777; 
+ 	}
+
+.header1 
+                 {	
+	 	  position: relative;
+		  width: 100%; 
+		  height: 70px; 
+		  background-color: #000000;
+         }
+	
+#menu1 
+              {
+        position: absolute; 
+        right: 0;
+        width: auto; 
+        height: 40px; 
+        background-color: #000000;
+        margin: 10px auto;
+        padding: 10px 1px 1px 1px; 
+       }
+	
+.header2
+               {
+         text-align: center;
+         height: 150px;
+         position: relative;
+         background-color: #777777;
+         width: 1150px;
+         left: 50px;
+		}
+#menu2
+           {
+       position: absolute;
+       left: 50px;
+       height: 400px;
+       width: 250px;
+       border: 1px solid #003366;
+      }
+.main-content
+                         {
+              background-color: #BBBBBB;
+              position: relative;
+              left: 300px; 
+              min-height: 300px;
+              height: 100%;
+              width: 930px;
+ 	          border: 1px solid #003366;
+             }
+
+#footer
+             {
+        left: 300px; 
+        position: relative;
+        height: 70px;
+        width: 900px; 
+        padding: 10px 1px 1px 1px;
+        margin: 15px;
+        background-color: #777777;
+       }
+#menu1, #menu1 ul 
+                               {
+	             float: right;
+	             list-style: none;
+	             padding: 2px 1px 1px 1px;
+	             margin: 7px auto;
+                }
+#menu1 li
+              {
+        font-family: Verdana, Geneva, sans-serif;   
+        font-size: 100%;
+	    float: left;
+	    position: relative;
+	    line-height: 2em;
+	    width: 12em;
+        padding: 2px 2px 2px 2px;
+	   }
+#menu1 a 
+              {
+        border-right: 1px solid;
+	    color: #555555;
+	    text-decoration: none;
+	    padding: 2px 2px 2px 2px;
+       }
+#menu1 a:hover 
+                          {
+	          color: #fff;
+             }
+#menu1 ul 
+               {
+	     border-top: 1px solid;
+        }
+#menu1 ul a 
+                 {
+	      border-right: none;
+	      border-right: 1px solid;
+	      border-bottom: 1px solid;
+	      border-left: 1px solid;
+     	  background: #999999;
+         }
+#menu1 a:link 
+                        {
+			 text-decoration: none;
+			 color: #003366;
+			 font-size: 23px;
+			 padding: 5px 5px 5px 5px;
+			}
+#menu1 a:visited
+                              {
+			    text-decoration: none;
+			    color: #003366;
+			    font-size: 23px;
+			    padding: 5px 5px 5px 5px;
+			   }
+#menu1 a:active
+                            {
+			   text-decoration: underline;
+			   color: #CCCC66;
+			   font-size: 23px;
+			   padding: 5px 5px 5px 5px;
+			  }
+#menu1 a:hover
+                          {
+			  color: #01766e;
+			  text-decoration: underline;
+			  font-size: 21px;
+		      padding: 5px 5px 5px 5px;
+			 }
+#menu2, #menu2 ul 
+                               {
+	             float: left;
+	             list-style: none;
+	             padding: 0;
+	             margin: 0;
+                }
+#menu2 li 
+              {
+        font-family: Verdana, Geneva, sans-serif;   
+        font-size: 110%;
+	    float: left;
+	    position: relative;
+	    line-height: 5em;
+	    width: 12em;
+        padding: 2px 2px 2px 15px;
+	   }
+#menu2 a 
+              {
+	    background: #999999;
+        border: 1.5px solid #003366;
+	    color: #555555;
+	    text-decoration: none;
+	    padding: 2px 2px 2px 2px;
+       }
+#menu2 a:hover
+                          {
+	          color: #fff;
+             }
+#menu2 ul a 
+                 {
+    	  background: #777777;
+         }
+#menu2 a:link 
+                        {
+			 text-decoration: none;
+			 color: #003366;
+			 font-size: 23px;
+			 padding: 5px 5px 5px 5px;
+			}
+#menu2 a:visited
+                              {
+			    text-decoration: none;
+			    color: #003366;
+			    font-size: 23px;
+			    padding: 5px 5px 5px 5px;
+			   }
+#menu2 a:active
+                            {
+			   text-decoration: underline;
+			   color: #CCCC66;
+			   font-size: 23px;
+			   padding: 5px 5px 5px 5px;
+			  }
+#menu2 a:hover
+                          {
+			  color: #01766e;
+			  text-decoration: underline;
+			  font-size: 21px;
+		      padding: 5px 5px 5px 5px;
+			 }
+p.second
+                {
+		 text-align: center;		
+		 padding: 30px 2px 3px 1px;
+		 line-height: 30px;
+		 word-spacing: 2px;
+		 font-size: 67px;
+		 font-family: "Comic Sans MS", cursive, sans-serif;
+		 width: auto;
+		 height: auto;
+		 color: #003366;
+		}
+p.second:first-letter
+                                          {
+					  font-size: 150%;
+					  color: #003366;
+					 }
+p.res
+          {
+      font-weight: normal;
+      text-align: justify;
+      font-family: "Lucida Console", Monaco, monospace;
+      font-size: 21px;
+	  margin: 0.3cm 0.3cm 0.3cm 0.3cm;
+      width: auto;
+      height: auto;
+      padding: 20px 15px 15px 15px;
+	  line-height: 60px;
+	  word-spacing: 4px;
+     }
+p.res3
+           {
+	   font-weight: bold;
+       text-align: center;
+       font-family: "Lucida Console", Monaco, monospace;
+       font-size: 20px;
+	   font-style: normal;
+       width: auto;
+       height: auto;
+      }
+p.res1
+            {
+       padding: 1px 1px 1px 1px;
+	   line-height: 15px;
+	   font-size: 14px;
+	   font-family: "Lucida Console", Monaco, monospace;
+	   width: auto;
+	   height: auto;
+	   color: #000000;
+	   font-weight: bold;
+      }
+p.res2
+           {
+       padding: 1px 1px 1px 1px;
+	   line-height: 15px;
+   	   font-size: 14px;
+	   font-family: "Lucida Console", Monaco, monospace;
+	   width: auto;
+	   height: auto;
+	   color: #000000;
+      }
+p.main 
+            {
+       padding: 15px 2px 3px 1px;
+	   line-height: 40px;
+       word-spacing: 1px;
+	   font-size: 17px;
+	   font-family: "Lucida Console", Monaco, monospace;
+	   width: auto;
+	   height: auto;
+	   color: #000000;
+	  }
+p 
+  {
+  text-indent: 15px;
+  font-weight: normal;
+  text-align: justify;
+  font-family: "Times New Roman",Times, serif;
+  font-size: 16px;
+  font-style: normal;
+  margin: 2px 2px 2px 2px;
+  width: auto;
+  height: auto;
+  padding: 3px 2px 3px 2px;
+ }
+table.tab 
+               {
+         padding: 15px 5px 5px 5px;
+	     border-width: 1px;
+	     border-spacing: 2px;
+	     border-style: outset;
+	     border-collapse: separate;
+	     width: 100%;
+        }
+table.tab, th
+                     {
+            padding: 1px 1px 1px 1px;
+	        border-width: 1px;
+	        border-style: inset;
+           }
+table.tab, td 
+                   {
+           padding: 1px 1px 1px 1px;
+	       border-width: 1px;
+	       border-style: inset;
+          }

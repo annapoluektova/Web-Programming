@@ -1,0 +1,70 @@
+<?php
+
+$color_id=$_GET['color_id'];
+$bgcolor='';
+// blue, green, brown, orange, red
+if ($color_id==1)
+{
+  $bgcolor='blue';
+}
+else if ($color_id==2)
+{
+  $bgcolor='green';
+}
+else if ($color_id==3)
+{
+  $bgcolor='brown';
+}
+else if ($color_id==4)
+{
+  $bgcolor='orange';
+}
+else if ($color_id==5)
+{
+  $bgcolor='red';
+}
+?>
+
+ <html>
+
+ <head>
+  <title>Drop_on</title>
+</head>
+<body>
+  
+ <form method="get" action="<?php echo $bgcolor;?>">
+  <table>
+    <tr>
+       <td>
+	     Choose Color:
+	   </td>
+	   <td>
+	     <select name='color'>
+		   <option name='color_id1' value="<?php echo $color_id=1; ?>" >blue</option>
+		   <option name='color_id2' value="color_id=2">green</option>
+		   <option name='color_id3' value="color_id=3">brown</option>
+		   <option name='color_id4' value="color_id=4">orange</option>
+		   <option name='color_id5' value="color_id=5">red</option>		   
+	     </select>
+       </td>
+     </tr>	
+		<tr>
+	   <td colspan='2'>
+	     <input type='submit' name='ChangeColor' value='change color' size='10' maxlength='10' /> 
+		 
+	   </td>
+	</tr>	 
+ </table>
+
+ </form>
+ 
+    <pre>
+      <?php
+        var_dump($_GET);
+      ?>
+    </pre>
+
+</body>
+
+
+</html>

@@ -1,0 +1,47 @@
+ <!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+ <head>
+  <title>Form4</title>
+</head>
+<body>
+  
+ <form action='echo.php' method='post'>
+  <table>
+    <tr>
+       <td>
+	     Choose Year:
+	   </td>
+	   <td>
+	     <select name='cc_year'>
+		   <option value='12'>2012</option>
+		   <option value='13'>2013</option>
+		   <option value='14'>2014</option>
+	     </select>
+       </td>
+     </tr>	
+		<tr>
+	   <td colspan='2'>
+	     <input type='submit' name='submit' value='click here' size='10' maxlength='10' /> 
+	   </td>
+	</tr>	 
+ </table>
+
+ </form>  
+  <script type='text/javascript'> //<![CDATA[
+document.write ("<a href='http://validator.w3.org/check?uri=" +
+location.href+ "\;ss=1;verbose=1' target='display'>" +
+"<img src='http://gblearn.com/images/valid-xhtml10.png' " +
+"width='60' height='21' border='0' " +
+"alt='Valid XHTML 1.0 Transitional.' " +
+"title='Valid XHTML 1.0 Transitional.' /></a>")
+dt=new Date(document.lastModified);
+document.write("<small>This page was last modified on " +
+dt.toLocaleString() + "</small>")
+//]]></script>
+</body>
+
+
+</html>

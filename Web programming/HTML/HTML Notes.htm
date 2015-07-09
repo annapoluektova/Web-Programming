@@ -1,0 +1,779 @@
+<style>
+#compact_menu {
+	padding: 2px;;
+	background-color: #3E424F;
+	height: 300px;
+	width: 200px;
+}
+#compact_menu li {
+	list-style: none;
+	height: 39px;
+	width: 40px;
+	margin: 2px;
+}
+
+#compact_menu a {
+	background: #FFFFFF url('navigation1.jpg') 0 0 no-repeat;
+	height: 39px;
+	width: 38px;
+	display: block;
+	position: relative;
+	
+}
+#compact_menu a:hover {
+	-moz-box-shadow:0 0 5px #9ddff5;
+	-webkit-box-shadow:0 0 5px #9ddff5;
+	box-shadow:0 0 5px #9ddff5;
+}
+#compact_menu span {
+	width:0;
+	padding:0;
+	position:absolute;
+	left:38px;
+	overflow:hidden;	
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:0.6px;
+	white-space:nowrap;
+	line-height:39px;
+	color:#22292B;
+	background-color:#2CDB46;
+	-moz-transition:250ms;
+	-webkit-transition:250ms;
+}
+#compact_menu li a:hover span {	
+	width:auto; 
+	padding:0 25px;
+	/* left:40px; */
+	overflow:visible;
+	-moz-transition:250ms;
+	-webkit-transition:250ms;
+}
+
+#compact_menu .first {
+	background-position:0 0;
+}
+#compact_menu .second {
+	background-position:-38px 0;
+}
+#compact_menu .third {
+	background-position:-76px 0;
+}
+#compact_menu .fourth {
+	background-position:-114px 0;
+}
+#compact_menu .fifth {
+	background-position:-152px 0;
+}
+#compact_menu .first:hover {
+	background-position:0 -39px;
+}
+#compact_menu .second:hover  {
+	background-position:-38px -39px;
+}
+#compact_menu .third:hover  {
+	background-position:-76px -39px;
+}
+#compact_menu .fourth:hover  {
+	background-position:-114px -39px;
+}
+#compact_menu .fifth:hover  {
+	background-position:-152px -39px;
+}
+#compact_menu .first span {
+	background-color:#7da315;
+	color:#3d4f0c;
+	text-shadow:1px 1px 0 #99bf31;
+}
+#compact_menu .second span {
+	background-color:#1e8bb4;
+	color:#223a44;
+	text-shadow:1px 1px 0 #44a8d0;
+}
+#compact_menu .third span {
+	background-color:#c86c1f;
+	color:#5a3517;
+	text-shadow:1px 1px 0 #d28344;
+}
+#compact_menu .fouth span {
+	background-color:#d0a525;
+	color:#604e18;
+	text-shadow:1px 1px 0 #d8b54b;
+}
+#compact_menu .fifth span {
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
+</style>
+<style>
+#btn1 {
+    background-image: -moz-linear-gradient(90deg, #9366B2 0%, #B288C8 100%);
+    border: 1px solid #996AB5;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    color: #452458;
+    padding: 5px 15px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+    width: 90px;
+}
+#btn1:hover {
+	background-image: -moz-linear-gradient(90deg, #9366B2 0%, #B86CE0 100%);
+	border: 1px solid #803DA8;
+}	
+</style>
+<style>
+/* Button 2 */
+.orange.button, button.button.validate {
+    background-color: #E38D27;
+    background-image: url("button_bg.png"), url("button_bg.png"), -moz-radial-gradient(center bottom , circle , #E8BD2D 0pt, rgba(232, 189, 45, 0) 100px), -moz-linear-gradient(#F1982F, #D4821F);
+    border: 1px solid #BEA280 !important;
+    color: #693E0A !important;
+}
+.blue.button {
+    background-color: #48B5F2;
+    background-image: url("button_bg.png"), url("button_bg.png"), -moz-radial-gradient(center bottom , circle , #59D0F4 0pt, rgba(89, 208, 244, 0) 100px), -moz-linear-gradient(#4FBBF7, #3FAEEB);
+    border: 1px solid #84ACC3 !important;
+    color: #0F4B6D !important;
+}
+.button.medium {
+    font-size: 18px;
+}
+.button {
+    -moz-transition: background-position 1s ease 0s;
+    background-clip: border-box;
+    background-image: url("button_bg.png");
+    background-position: left bottom, right top, 0 0pt, 0 0;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 0 1px #FFFFFF inset;
+    cursor: pointer;
+    display: inline-block;
+    font: 15px Calibri,Arial,sans-serif;
+    margin-left: 30px;
+    margin-top: -15px;
+    padding: 10px 20px;
+    position: relative;
+    text-decoration: none !important;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+a {
+    color: #AAD4FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+.orange.button:hover, button.button.validate:hover {
+    background-color: #EC9732;
+    background-image: url("button_bg.png"), url("button_bg.png"), -moz-radial-gradient(center bottom , circle , #F1C034 0pt, rgba(241, 192, 52, 0) 100px), -moz-linear-gradient(#F9A746, #E18F2B);
+}
+.blue.button:hover {
+    background-color: #63C7FE;
+    background-image: url("button_bg.png"), url("button_bg.png"), -moz-radial-gradient(center bottom , circle , #6DD9FA 0pt, rgba(109, 217, 250, 0) 100px), -moz-linear-gradient(#63C7FE, #58BEF7);
+}
+.orange.button, button.button.validate {
+    background-color: #E38D27;
+    background-image: url("button_bg.png"), url("button_bg.png"), -moz-radial-gradient(center bottom , circle , #E8BD2D 0pt, rgba(232, 189, 45, 0) 100px), -moz-linear-gradient(#F1982F, #D4821F);
+    border: 1px solid #BEA280 !important;
+    color: #693E0A !important;
+}
+.button:hover {
+    background-position: left top, right bottom, 0 0pt, 0 0;
+}
+</style>
+
+<a class="button orange medium" target="_blank" title="b1" href="">Скачать бесплатно</a>
+<a class="button blue medium" target="_blank" title="b2" href="">Скачать бесплатно</a>
+
+<button id="btn1" style="">Button</button>
+<br/><br/>
+
+<div style=" width: 0; height: 0;   border: 100px solid;   border-top-color: red;   border-right-color: green;   border-bottom-color: blue;   border-left-color: yellow;"></div>
+
+  <div style=" width: 0; height: 0;   border: 100px solid transparent;   border-bottom-color: #5CB0FA;"></div>
+
+<ul id="compact_menu">
+	<li>
+		<a class="first" href="#">
+			<span>Home</span>
+		</a>
+	</li>	
+	<li>
+		<a class="second" href="#">
+			<span>About</span>
+		</a>
+	</li>	
+	<li>
+		<a class="third" href="#">
+			<span>Services</span>
+		</a>
+	</li>	
+	<li>
+		<a class="fourth" href="#">
+			<span>Portfolio</span>
+		</a>
+	</li>	
+	<li>
+		<a class="fifth" href="#">
+			<span>Contact Our Company Now!</span>
+		</a>
+	</li>
+</ul>
+
+
+<div id="star_01"> <img src="http://soi.stanford.edu/press/ssu11-01/NASA/eitplumeg.gif" /> <span>Text!</span> </div>
+<style>
+#star_01 {
+	width: 500px;
+	hegith: 500px;
+}
+#star_01 img {
+	-moz-transition:all 0.3s ease-in-out;
+}
+#star_01:hover img {
+	transform:scale(2);
+	-moz-transform:scale(2);
+	opacity: 0;
+}
+#star_01 span {
+    width:38px;
+    height:38px;
+    opacity:0.5;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-20px 0px 0px -20px;
+    border:1px solid rgba(0,0,0,0.5);
+    background:#4e5c50 url(../images/arrow_down.png) no-repeat center center;
+    -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.3) inset, 0px 1px 2px rgba(255,255,255,0.5);
+    -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.3) inset, 0px 1px 2px rgba(255,255,255,0.5);
+    box-shadow:0px 1px 1px rgba(255,255,255,0.3) inset, 0px 1px 2px rgba(255,255,255,0.5);
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+#star_01:hover span {
+	opacity: 1;
+}
+</style>
+
+
+<div id="bigdiv">Div Element Modification<br />
+<span id="text1">Text 1</span><br />
+<span id="text2">Text 2</span><br />
+<span id="text3">Text 3</span><br />
+<span id="text4">Text 4</span><br />
+<span id="text5">Text 5</span><br />
+
+</div>
+
+<style>
+#bigdiv {
+	width: 300px;
+	height: 300px;
+	background-color: grey;
+}
+#bigdiv:hover #text1 {
+	color: #ff3123;
+	font-size: 35px;
+}
+#bigdiv:hover #text2 {
+	color: #321321;
+	font-size: 30px;
+	background-color: yellow;
+	padding-left: 100px;
+}
+#bigdiv:hover #text3 {
+	color: #aaaaaa;
+	font: 200% "Trebuchet MS",Verdana,Helvetica,Arial,sans-serif !important;
+}
+#bigdiv:hover #text4 {
+	color: #bcabca;
+	font-size: 20px;
+	background-color: green;
+	margin-left: 100px;
+	font-weight: 600;
+}
+#bigdiv:hover #text5 {
+	color: #fffaaa;
+	font-size: 15px;
+	padding: 5px;
+	border: 5px black solid;
+	margin-left: 200px;
+}
+</style>
+
+<h1 id="elminf">Element Info</h1>
+<!--
+Javascript Events:
+	onLoad
+	onUnload
+	onSubmit (<form method="post" action="xxx.htm" onsubmit="return checkForm() /If False, will cancel Post/">)
+	onMouseOver
+	
+	var book = {
+		name: 'Benji',
+		talk: function(){ alert('Msg!'); }
+		author: {
+			firstname: 'Joseph',
+			lastname: 'Heller'
+			}
+	};
+	
+	(book.author.firstname -OR- book['author']['firstname'] -OR- book['author'].firstname / vice-versa)
+	
+	(function(){
+		// code goes here...
+	})()
+	
+	
+ -->
+<div id="my-div">Listener Test</div>
+
+<script type="text/javascript">
+
+/*Irregular Behavour*/
+
+function callback(evt) {
+// prep work
+evt = evt || window.event;
+var target = (typeof evt.target !== 'undefined') ? evt.target : evt.srcElement;
+// actual callback work
+//	alert("ID: " + target.id + " | Type: " + target.nodeName);
+//	console.log("ID: " + target.id + " | Type: " + target.nodeName);
+// 	evt.preventDefault();
+var elminf = document.getElementById('elminf');
+elminf.innerHTML = "ID: " + target.id + " | Type: " + target.nodeName;
+}
+// start listening for click events
+if (document.addEventListener){ // FF
+document.addEventListener('click', callback, false);
+} else if (document.attachEvent){ // IE
+document.attachEvent('onclick', callback);
+} else {
+document.onclick = callback;
+}
+
+// __________________________________
+//_______________________
+var myelement = document.getElementById('my-div');
+myelement.onclick = function() {
+alert('Ouch!');
+alert('And double ouch!');
+}
+myelement.addEventListener('click', console.log, false);
+// myelement.removeEventListener('click', paraHandler, false);
+/* --- */
+function displayDate() {
+document.getElementById("demo").innerHTML=Date();
+}
+function msgDate() {
+alert(Date());
+}
+function conf1 () {
+var rlt = confirm("123456?");
+if (rlt)
+{
+alert ("Yes!");
+}
+else if (rlt == false) {
+alert("Cancel...");
+}
+}
+	function promp1 () {
+		var rlt = prompt("Smth", "def");
+		if (rlt == "def") {
+			alert("No Input!");
+			promp1();
+			}
+		else {
+			alert(rlt);
+			}
+		}
+		
+function setCookie(c_name,value,exdays)
+	{
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate() + exdays);
+		var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+		document.cookie=c_name + "=" + c_value;
+	}
+	
+function getCookie(c_name)
+	{
+		var i,x,y,ARRcookies=document.cookie.split(";");
+		for (i=0;i<ARRcookies.length;i++)
+		{
+		  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+		  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+		  x=x.replace(/^\s+|\s+$/g,"");
+		  if (x==c_name)
+			{
+			return unescape(y);
+			}
+		  }
+	}
+	
+function checkCookie()
+	{
+		var username=getCookie("username");
+		if (username!=null && username!="")
+		  {
+		  alert("Welcome again " + username);
+		  }
+		else
+		  {
+		  username=prompt("Please enter your name:","");
+		  if (username!=null && username!="")
+			{
+			setCookie("username",username,365);
+			}
+		  }
+	}
+
+</script>
+
+<p id="demo"></p>
+
+<span onclick="displayDate()" style="font-size:30;">Display Date</span>
+<br>
+<span onclick="msgDate()" style="font-size:30;">Msgbox Date</span>
+<br>
+<span onclick="conf1()" style="font-size:30;">Msgbox Confirmation</span>
+<br>
+<span onclick="promp1()" style="font-size:30;">Msgbox Prompt</span>
+
+<br>
+
+<!-- Ajax -->
+
+<script type="text/javascript">
+function loadXMLDoc()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv1").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","http://www.w3schools.com/ajax/ajax_info.txt",true); 
+xmlhttp.send();
+}
+</script>
+
+<br />
+<div id="myDiv1"><h3>Ajax Example (FX needs a file on same host)</h3></div>
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+<br />
+
+
+<!-- CSS -->
+<!-- 
+	column-count: -
+	border-top-left-radius: 10px 20px;
+	border-image:
+	box-shadow:
+	
+	
+Pseudo-Classes
+	:hover
+	:focus
+	:first-child
+	:nth-child(4n) - Every 4-th
+	:nth-child(4) - Just 4-th
+	:nth-child(even)
+	:target - (href="#myid" - click)
+	not(:expressiion)
+	:checked {}
+	:disabled {}
+	:enabled {}
+	input[type='text']:disabled
+	button[disabled="true"]
+	::selection {}
+
+
+Selectors
+	* 		-		Universal Selector
+	h1+p	- 		Adjacent Selector - Applies to elements that are next to each-other
+	.		-		Class
+	#		-		ID 
+
+	^	- 	Beginning Selector
+	$	-	Ending Selector
+
+-->
+
+<div>
+<span style="margin-left: 150px; font-size: 30px; -moz-transform: rotate(30deg) skewX(45deg);">Text Rotation</span><br><br><br>
+</div><br/>
+
+<style>
+#shadow1 span::-moz-selection {
+        background: #E35F27;
+}
+#sp1 {
+	font-size: 20px; 
+	-moz-transition-duration: 1s;
+}
+#sp1:hover {
+	font-size: 40px; 
+	text-shadow: 0px 0px 3px #000, -2px -2px 5px #1B32E0, 3px 3px 3px #E01B4C;
+	-moz-transition-duration: 900ms;
+}
+</style>
+<div id="shadow1">
+<h2>Shadow Examples, Custom Selection Background Color:</h2>
+	<span style="text-shadow: 3px 3px 3px #000; font-size: 30px">Text With Shadow</span><br/>
+	<span style="text-shadow: 0px 0px 3px #000; font-size: 30px; color: #fff;">Text With Shadow</span><br/>
+	<span style="text-shadow: 0px 0px 3px #000, -2px -2px 5px #1B32E0, 3px 3px 3px #E01B4C; font-size: 30px; color: #fff;">Text With Shadow</span><br/>
+	<span style="text-shadow: 0 1px 0 #777, 0 -1px 0 #000; font-size: 30px; color: #333; background-color: #565656;">Text With Shadow</span><br/>
+	<span style="color: #333; font-size: 30px;">Text With Shadow</span><br/>
+	<span id="sp1">Animation</span><br />
+</div>
+<br/>
+<style>
+
+a[href ^="http:"] {
+	border: 1px #000000 dashed;
+}
+#menu1 a:after {
+	content: " (" attr(href) ")";
+}
+</style>
+<br>
+<div class="d1">
+<a href="#1" class="d1">Internal Link</a> - <a href="http://www.google.com">External Link</a>
+</div>
+<br/>
+
+<style>
+#menu1 {
+	width: 200px;
+	padding: 10px;
+}
+#menu1 ul {
+	list-style: none;
+	padding: 0;
+}
+
+#menu1 li a {
+	color: #ffffff;
+	background-color: #B51032;
+	display: block;
+	border-left: 10px #711515 solid;
+	text-decoration: none;
+	border-bottom: 1px #ffffff solid;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	cursor: default;
+	font-family: Verdana;
+	font-size: 90%;
+	-moz-transition-duration: 900ms;
+}
+#menu1 li a:hover {
+	background-color: #711515;
+	border-left: 10px #B51032 solid;
+	-moz-transition-duration: 0.5s;
+}
+#menu1 ul ul {
+	list-style: none;
+	margin-left: 10px;
+}
+#menu1 ul ul li a {
+	color: #ffffff;
+	background-color: #099623;
+	display: block;
+	border-left: 10px #92A31F solid;
+	text-decoration: none;
+	border-bottom: 1px #ffffff solid;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	cursor: default;
+	-moz-transition-duration: 900ms;
+}
+#menu1 ul ul li a:hover {
+	background-color: #92A31F;
+	border-left: 10px #099623 solid;
+	-moz-transition-duration: 0.5s;
+}
+
+</style>
+
+<div id="menu1">
+<ul>
+	<li><a href="">First Item - Level One</a></li>
+	<li><a href="">Second Item - Level One</a></li>
+	<li><a href="">Third Item - Level One</a></li>
+		<ul>
+			<li><a href="">First Item - L2</a></li>
+			<li><a href="">Second Item - L2</a></li>
+			<li><a href="">Third Item - L2</a></li>
+		</ul>
+	<li><a href="">Fourth Item - Level One</a></li>
+	<li><a href="">Fifth Item - Level One</a></li>
+		<ul>
+			<li><a href="">Fourth Item - L2</a></li>
+			<li><a href="">Fifth Item - L2</a></li>
+			<li><a href="">Sixth Item - L2</a></li>
+		</ul>
+	<li><a href="">Sixth Item - Level One</a></li>
+</ul>
+</div>
+<br/>
+
+<style>
+#hnav {
+	font-size: 90%;
+}
+#hnav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 1em;
+}
+#hnav li {
+	display: inline;
+}
+#hnav a {
+	padding: 0.4em 1em 0.4em 1em;
+	color: #FFFFFF;
+	background-color: #7DB08C;
+	text-decoration: none;
+	border: 1px solid #711515;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-bottom: 1px solid #717171;
+	border-right: 1px solid #717171;
+}
+#hnav a:hover {
+	color: #FFFFFF;
+	background-color: #ABBEDE;
+	border-top: 1px solid #717171;
+	border-left: 1px solid #717171;
+	border-bottom: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+
+#hnav a:link, #nav a:visited {
+	display: block;
+	width: 150px;
+	padding: 10px 0 16px 32px;
+	font: bold 80% Arial, Helvetica, sans-serif;
+	color: #FF9900;
+	background: url("http://soi.stanford.edu/press/ssu11-01/NASA/eitplumeg.gif") top left no-repeat;
+	text-decoration: none;
+}
+	#hnav a:hover {
+	background-position: 0 -69px;
+	color: #B51032;
+}
+	#hnav a:active {
+	background-position: 0 -138px;
+	color: #006E01;
+}
+</style>
+<div id="hnav">
+	<ul>
+		<li><a href="#">_____1_____</a></li>
+		<li><a href="#">_____2_____</a></li>
+		<li><a href="#">_____3_____</a></li>
+	</ul>
+<br/>
+</div>
+<br/>
+
+<style>
+.ex_input textarea, .ex_input input, .ex_input select {
+	background-color: #D6D6D6;
+	color: #FFFFFF;
+	border: 1px #CCCCCC dotted;
+	opacity: 0.7;
+	background: url("http://soi.stanford.edu/press/ssu11-01/NASA/eitplumeg.gif") top left no-repeat;
+	text-decoration: none;
+}
+.ex_input textarea:hover, .ex_input input:hover, .ex_input select:hover {
+	background-color: #DBE7FF;
+	color: #000000;
+	border: 1px #CCCCCC dotted;
+	opacity: 1;
+	background-position: -90 -90;
+}
+.ex_input input:focus, .ex_input textarea:focus {
+	border: 2px #000000 solid;
+}
+</style>
+<div class="ex_input"><label for="ex_textarea1">Input and Textarea example with 'background-image' and 'background-position'</label><br/>
+<input type="text" name="name" id="name" /><br/>
+<textarea id="ex_textarea1" cols="25" rows="3"></textarea>
+</div>
+<br/>
+
+<div>
+<label for="inp_exmp1">Clicking on this label will select the input element following it.</label>
+<input type="text" id="inp_exmp1" />
+</div>
+
+<style>
+
+
+label {
+float: left;
+width: 40%;
+}
+</style>
+<br/>
+
+<fieldset>
+<legend>Fieldset Example</legend>
+Used for grouping<br>
+Elements togather<br>
+In a block.
+</fieldset>
+<br/>
+
+<div>
+Accessibility Key Example: (Alt+Shift+A for FX)
+<input type="text" name="fullname1" id="fullname1" class="txt1" accesskey="a" />
+</div>
+<br/>
+
+<div style="position: absolute; top: 100px; left: 300px; width: 150px; background-color: #B0C4DE; border: 2px solid #34537D;">
+Absolute Positioning - Removes element completely from document flow.
+</div>
+
+<div style="width: 630px; margin: auto;">
+Centered Div
+</div>
+
+
+<style>
+div, fieldset {
+	border: 1px solid #B8C6D1;
+	margin-bottom: 1px;
+	-moz-transition: 500ms;
+}
+div:hover, fieldset:hover {
+	background-color: #DDFAD9;
+	box-shadow: 0 0 20px rgba(0, 235, 255, 0.8);
+	-moz-transition: 500ms;
+}
+</style>

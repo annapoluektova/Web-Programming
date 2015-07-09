@@ -1,0 +1,211 @@
+body
+        {
+     background-color: #BBBBBB; 
+ 	}
+
+body.tab1{
+            background-color: #DDDDDD;
+           }
+
+#header
+               {
+         text-align: center;
+         height: 75px;
+         position: relative;
+         background-color: #BBBBBB;
+         width: 1250px;
+         left: 50px;
+		}
+#menu
+           {
+       position: absolute;
+       left: 50px;
+       height: 520px;
+       width: 180px;
+       border: 1px solid #003366;
+      }
+#main-content
+                         {
+              background-color: #DDDDDD;
+              position: relative;
+              left: 250px; 
+              min-height: 300px;
+              height: 520px;
+              width: 1000px;
+ 	          border: 1px solid #003366;
+             }
+
+#footer
+             {
+        left: 250px; 
+        position: relative;
+        height: 70px;
+        width: 1000px; 
+        padding: 5px 1px 1px 1px;
+        margin: 10px;
+        background-color: #BBBBBB;
+       }
+
+#menu, #menu ul 
+                               {
+	             float: left;
+	             list-style: none;
+	             padding: 0;
+	             margin: 0;
+                }
+#menu li 
+              {
+        font-family: Verdana, Geneva, sans-serif;   
+        font-size: 110%;
+	    float: left;
+	    position: relative;
+	    line-height: 52px;
+	    width: 12em;
+        padding: 2px 2px 2px 15px;
+	   }
+#menu a 
+              {
+	    background: #DDDDDD;
+        border: 1.5px solid #003366;
+	    color: #555555;
+	    text-decoration: none;
+	    padding: 2px 2px 2px 2px;
+       }
+#menu a:hover
+                          {
+	          color: #fff;
+             }
+#menu a:link 
+                        {
+			 text-decoration: none;
+			 color: #003366;
+			 font-size: 18px;
+			 padding: 3px 3px 3px 3px;
+			}
+#menu a:visited
+                              {
+			    text-decoration: none;
+			    color: #003366;
+			    font-size: 18px;
+			    padding: 3px 3px 3px 3px;
+			   }
+#menu a:active
+                            {
+			   text-decoration: underline;
+			   color: #CCCC66;
+			   font-size: 18px;
+			   padding: 3px 3px 3px 3px;
+			  }
+#menu a:hover
+                          {
+			  color: #01766e;
+			  text-decoration: underline;
+			  font-size: 18px;
+		      padding: 3px 3px 3px 3px;
+			 }
+p.second
+                {
+		 text-align: center;		
+		 padding: 10px 2px 5px 1px;
+		 line-height: 40px;
+		 word-spacing: 2px;
+		 font-size: 57px;
+		 font-family: "Comic Sans MS", cursive, sans-serif;
+		 width: auto;
+		 height: auto;
+		 color: #003366;
+		}
+p.second:first-letter
+                                          {
+					  font-size: 150%;
+					  color: #003366;
+					 }
+p.res1
+            {
+       padding: 1px 1px 1px 1px;
+	   line-height: 25px;
+	   font-size: 20px;
+	   font-family: "Times New Roman",Times, serif;
+	   width: auto;
+	   height: auto;
+	   color: #000000;
+	   font-weight: bold;
+      }
+p.res2
+           {
+       padding: 1px 1px 1px 1px;
+	   line-height: 25px;
+   	   font-size: 18px;
+	   font-family: "Times New Roman",Times, serif;
+	   width: auto;
+	   height: auto;
+	   color: #000000;
+      }
+p.res3
+           {
+	   font-weight: bold;
+       text-align: center;
+	   line-height: 25px;
+       font-family: "Times New Roman",Times, serif;
+       font-size: 22px;
+	   font-style: normal;
+       width: auto;
+       height: auto;
+      }
+p.main 
+            {
+       padding: 15px 2px 3px 1px;
+	   line-height: 35px;
+       word-spacing: 1px;
+	   font-size: 20px;
+	   font-family: "Times New Roman",Times, serif;
+	   width: auto;
+	   height: auto;
+	   color: #000000;
+	  }
+p 
+  {
+  text-indent: 15px;
+  font-weight: normal;
+  text-align: justify;
+  font-family: "Times New Roman",Times, serif;
+  font-size: 17px;
+  font-style: normal;
+  margin: 2px 2px 2px 2px;
+  width: auto;
+  height: auto;
+  padding: 2px 2px 2px 2px;
+ }
+table.tab 
+               {
+         padding: 15px 10px 10px 10px;
+	     border-width: 2px;
+		 margin: 40px auto;
+	     border-spacing: 0.5px;
+	     border-style: solid;
+	     border-collapse: separate;
+	     width: 100%;
+		 background-color: #DDDDDD;
+        }
+table.tab, th
+                     {
+			background-color: #BBBBBB;
+            padding: 2px 2px 2px 2px;
+	        border-width: 1px;
+	        border-style: solid;
+           }
+table.tab, td 
+                   {
+		   background-color: #DDDDDD;
+           padding: 2px 2px 2px 2px;
+	       border-width: 1px;
+	       border-style: solid;
+          }
+#iframe_gl
+                    {
+	       background-color: #DDDDDD;
+		   height: 520px;
+		   width: 1000px;
+		   border-width: 0;
+		   font-weight: normal;
+		  }
